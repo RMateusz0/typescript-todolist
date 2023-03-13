@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="info-div">
+        <p>TypeScript / localStorage / RWD</p>
+        <p>Order of rendering depends on each task priority.</p>
+    </div>
+
+    <div class="section-add">
+        <form>
+            <ul class="input-ul">
+                <li class="input-li">
+                    <input type="text" id="text-input" placeholder="Enter new task">
+                    <button class="clear-value-button">✕</button>
+                </li>
+                <li class="input-li">
+                    <label for="high">High priority</label>
+                     <input type="radio" name="priority" value="high" id="high">
+                </li>
+                <li class="input-li">
+                    <label for="medium">Medium priority</label>
+                    <input type="radio" name="priority" value="medium" id="medium">
+                </li>
+                <li class="input-li">
+                    <label for="low">Low priority</label>
+                    <input type="radio" name="priority" value="low" id="low"></li>
+                <li class="input-li">
+                    <button class="submit-button">Add new task</button>
+                </li>
+            </ul>
+                       
+            
+            
+            
+        </form>
+    </div>
+    <div class="section-show">
+        <ul class="task-list-section"></ul>
+        
+    </div>
+    
+    
+    
+    <script src="./src-ts-out/script.js"></script>
+</body>
+</html>
